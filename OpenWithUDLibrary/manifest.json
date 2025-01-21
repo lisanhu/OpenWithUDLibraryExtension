@@ -5,11 +5,17 @@
     "description": "Try to open the current page through UD library",
     "permissions": ["activeTab"],
     "background": {
-      "service_worker": "background.js"
+      "service_worker": "background.js",
+      "scripts": ["background.js"]
     },
     "icons": {
       "512": "icon-512.png"
     },
-    "action": {}
+    "action": {},
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "{b50bc4f6-d3b9-40cf-beec-24816806107d}"
+      }
+    }
   }
   
